@@ -103,16 +103,12 @@
 		F27BFFA41FAB6C2A0080BAEA /* CryptoPrice-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F27BFFA51FAB6C2A0080BAEA /* AppDelegate.h */,
-				F27BFFA61FAB6C2A0080BAEA /* AppDelegate.m */,
-				F27BFFA81FAB6C2A0080BAEA /* ViewController.h */,
-				F27BFFA91FAB6C2A0080BAEA /* ViewController.m */,
-				F27BFFAB1FAB6C2A0080BAEA /* Main.storyboard */,
-				F27BFFB11FAB6C2A0080BAEA /* Assets.xcassets */,
-				F27BFFB31FAB6C2A0080BAEA /* LaunchScreen.storyboard */,
-				F27BFFB61FAB6C2A0080BAEA /* Info.plist */,
-				F27BFFB71FAB6C2A0080BAEA /* main.m */,
-				F27BFFAE1FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld */,
+				F2F91EC41FAB7A6E00E71C90 /* Supporting Files */,
+				F2F91EBE1FAB790800E71C90 /* Dashboard */,
+				F2F91EBF1FAB791F00E71C90 /* Database */,
+				F2F91EC01FAB793100E71C90 /* Helpers */,
+				F2F91EC11FAB795100E71C90 /* Managers */,
+				F2F91EC21FAB795E00E71C90 /* Utils */,
 			);
 			path = "CryptoPrice-iOS";
 			sourceTree = "<group>";
@@ -133,6 +129,58 @@
 				F27BFFCE1FAB6C2A0080BAEA /* Info.plist */,
 			);
 			path = "CryptoPrice-iOSUITests";
+			sourceTree = "<group>";
+		};
+		F2F91EBE1FAB790800E71C90 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				F27BFFB71FAB6C2A0080BAEA /* main.m */,
+				F27BFFAB1FAB6C2A0080BAEA /* Main.storyboard */,
+				F27BFFA81FAB6C2A0080BAEA /* ViewController.h */,
+				F27BFFA91FAB6C2A0080BAEA /* ViewController.m */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F2F91EBF1FAB791F00E71C90 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F2F91EC01FAB793100E71C90 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2F91EC11FAB795100E71C90 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F2F91EC21FAB795E00E71C90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F2F91EC41FAB7A6E00E71C90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F27BFFB31FAB6C2A0080BAEA /* LaunchScreen.storyboard */,
+				F27BFFB61FAB6C2A0080BAEA /* Info.plist */,
+				F27BFFA51FAB6C2A0080BAEA /* AppDelegate.h */,
+				F27BFFA61FAB6C2A0080BAEA /* AppDelegate.m */,
+				F27BFFAE1FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld */,
+				F27BFFB11FAB6C2A0080BAEA /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
