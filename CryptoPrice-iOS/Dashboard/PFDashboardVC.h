@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PFDashboardVC.h
 //  CryptoPrice-iOS
 //
 //  Created by Christopher Coverdale on 02/11/2017.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PFDashboardVC : UIViewController
 
 
 @end

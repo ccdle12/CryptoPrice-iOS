@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F27BFFA71FAB6C2A0080BAEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFA61FAB6C2A0080BAEA /* AppDelegate.m */; };
-		F27BFFAA1FAB6C2A0080BAEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFA91FAB6C2A0080BAEA /* ViewController.m */; };
+		F27BFFAA1FAB6C2A0080BAEA /* PFDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFA91FAB6C2A0080BAEA /* PFDashboardVC.m */; };
 		F27BFFAD1FAB6C2A0080BAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27BFFAB1FAB6C2A0080BAEA /* Main.storyboard */; };
 		F27BFFB01FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFAE1FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld */; };
 		F27BFFB21FAB6C2A0080BAEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27BFFB11FAB6C2A0080BAEA /* Assets.xcassets */; };
@@ -16,6 +16,7 @@
 		F27BFFB81FAB6C2A0080BAEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFB71FAB6C2A0080BAEA /* main.m */; };
 		F27BFFC21FAB6C2A0080BAEA /* CryptoPrice_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFC11FAB6C2A0080BAEA /* CryptoPrice_iOSTests.m */; };
 		F27BFFCD1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFCC1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m */; };
+		F2F91EC61FAB8B4F00E71C90 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,8 @@
 		F27BFFA21FAB6C2A0080BAEA /* CryptoPrice-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoPrice-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27BFFA51FAB6C2A0080BAEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F27BFFA61FAB6C2A0080BAEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F27BFFA81FAB6C2A0080BAEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F27BFFA91FAB6C2A0080BAEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F27BFFA81FAB6C2A0080BAEA /* PFDashboardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFDashboardVC.h; sourceTree = "<group>"; };
+		F27BFFA91FAB6C2A0080BAEA /* PFDashboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDashboardVC.m; sourceTree = "<group>"; };
 		F27BFFAC1FAB6C2A0080BAEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F27BFFAF1FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptoPrice_iOS.xcdatamodel; sourceTree = "<group>"; };
 		F27BFFB11FAB6C2A0080BAEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		F27BFFC81FAB6C2A0080BAEA /* CryptoPrice-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoPrice-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27BFFCC1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoPrice_iOSUITests.m; sourceTree = "<group>"; };
 		F27BFFCE1FAB6C2A0080BAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		F27BFF991FAB6C2A0080BAEA = {
 			isa = PBXGroup;
 			children = (
+				F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */,
 				F27BFFA41FAB6C2A0080BAEA /* CryptoPrice-iOS */,
 				F27BFFC01FAB6C2A0080BAEA /* CryptoPrice-iOSTests */,
 				F27BFFCB1FAB6C2A0080BAEA /* CryptoPrice-iOSUITests */,
@@ -103,6 +106,7 @@
 		F27BFFA41FAB6C2A0080BAEA /* CryptoPrice-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F27BFFB61FAB6C2A0080BAEA /* Info.plist */,
 				F2F91EC41FAB7A6E00E71C90 /* Supporting Files */,
 				F2F91EBE1FAB790800E71C90 /* Dashboard */,
 				F2F91EBF1FAB791F00E71C90 /* Database */,
@@ -136,8 +140,8 @@
 			children = (
 				F27BFFB71FAB6C2A0080BAEA /* main.m */,
 				F27BFFAB1FAB6C2A0080BAEA /* Main.storyboard */,
-				F27BFFA81FAB6C2A0080BAEA /* ViewController.h */,
-				F27BFFA91FAB6C2A0080BAEA /* ViewController.m */,
+				F27BFFA81FAB6C2A0080BAEA /* PFDashboardVC.h */,
+				F27BFFA91FAB6C2A0080BAEA /* PFDashboardVC.m */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -174,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				F27BFFB31FAB6C2A0080BAEA /* LaunchScreen.storyboard */,
-				F27BFFB61FAB6C2A0080BAEA /* Info.plist */,
 				F27BFFA51FAB6C2A0080BAEA /* AppDelegate.h */,
 				F27BFFA61FAB6C2A0080BAEA /* AppDelegate.m */,
 				F27BFFAE1FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld */,
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F27BFFB51FAB6C2A0080BAEA /* LaunchScreen.storyboard in Resources */,
+				F2F91EC61FAB8B4F00E71C90 /* Default-568h@2x.png in Resources */,
 				F27BFFB21FAB6C2A0080BAEA /* Assets.xcassets in Resources */,
 				F27BFFAD1FAB6C2A0080BAEA /* Main.storyboard in Resources */,
 			);
@@ -316,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F27BFFAA1FAB6C2A0080BAEA /* ViewController.m in Sources */,
+				F27BFFAA1FAB6C2A0080BAEA /* PFDashboardVC.m in Sources */,
 				F27BFFB01FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld in Sources */,
 				F27BFFB81FAB6C2A0080BAEA /* main.m in Sources */,
 				F27BFFA71FAB6C2A0080BAEA /* AppDelegate.m in Sources */,
