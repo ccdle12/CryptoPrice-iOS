@@ -11,6 +11,7 @@
 
 @interface ExchangesGraph : NSObject
 
++(ExchangesGraph*) instanceOfExchangesGraph;
 -(Exchange*) getExchange:(NSString*) exchange;
 
 @end

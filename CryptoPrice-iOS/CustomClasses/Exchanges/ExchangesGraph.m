@@ -17,6 +17,23 @@
 
 @implementation ExchangesGraph
 
++(ExchangesGraph*) instanceOfExchangesGraph
+{
+    static ExchangesGraph* exchangesGraph = nil;
+    
+    if (!exchangesGraph)
+    {
+        exchangesGraph = [[super allocWithZone:nil] init];
+    }
+    
+    return exchangesGraph;
+}
+
++(id) allocWithZone:(struct _NSZone *)zone
+{
+    return [self instanceOfExchangesGraph];
+}
+
 -(id) init
 {
     self = [super init];
