@@ -17,6 +17,9 @@
 		F27BFFC21FAB6C2A0080BAEA /* CryptoPrice_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFC11FAB6C2A0080BAEA /* CryptoPrice_iOSTests.m */; };
 		F27BFFCD1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFCC1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m */; };
 		F2F91EC61FAB8B4F00E71C90 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */; };
+		F2FB99F31FAC841C0027513D /* CryptoCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FB99F21FAC841C0027513D /* CryptoCurrency.m */; };
+		F2FB99F61FAC86BC0027513D /* Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FB99F51FAC86BC0027513D /* Bitcoin.m */; };
+		F2FB99F71FAC86BC0027513D /* Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FB99F51FAC86BC0027513D /* Bitcoin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		F27BFFCC1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoPrice_iOSUITests.m; sourceTree = "<group>"; };
 		F27BFFCE1FAB6C2A0080BAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F2FB99F11FAC841C0027513D /* CryptoCurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoCurrency.h; sourceTree = "<group>"; };
+		F2FB99F21FAC841C0027513D /* CryptoCurrency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoCurrency.m; sourceTree = "<group>"; };
+		F2FB99F41FAC86BC0027513D /* Bitcoin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bitcoin.h; sourceTree = "<group>"; };
+		F2FB99F51FAC86BC0027513D /* Bitcoin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bitcoin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +113,7 @@
 		F27BFFA41FAB6C2A0080BAEA /* CryptoPrice-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F2FB99F01FAC83EE0027513D /* CustomClasses */,
 				F27BFFB61FAB6C2A0080BAEA /* Info.plist */,
 				F2F91EC41FAB7A6E00E71C90 /* Supporting Files */,
 				F2F91EBE1FAB790800E71C90 /* Dashboard */,
@@ -184,6 +192,17 @@
 				F27BFFB11FAB6C2A0080BAEA /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2FB99F01FAC83EE0027513D /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB99F11FAC841C0027513D /* CryptoCurrency.h */,
+				F2FB99F21FAC841C0027513D /* CryptoCurrency.m */,
+				F2FB99F41FAC86BC0027513D /* Bitcoin.h */,
+				F2FB99F51FAC86BC0027513D /* Bitcoin.m */,
+			);
+			path = CustomClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +343,8 @@
 				F27BFFB01FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld in Sources */,
 				F27BFFB81FAB6C2A0080BAEA /* main.m in Sources */,
 				F27BFFA71FAB6C2A0080BAEA /* AppDelegate.m in Sources */,
+				F2FB99F61FAC86BC0027513D /* Bitcoin.m in Sources */,
+				F2FB99F31FAC841C0027513D /* CryptoCurrency.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FB99F71FAC86BC0027513D /* Bitcoin.m in Sources */,
 				F27BFFC21FAB6C2A0080BAEA /* CryptoPrice_iOSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
