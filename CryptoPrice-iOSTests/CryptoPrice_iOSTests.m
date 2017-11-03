@@ -30,7 +30,7 @@
 
 
 
-/** Tests **/
+/** Tests for Bitcoin Class **/
 - (void)testBitcoinIsNotNull
 {
     XCTAssert(self.bitcoin);

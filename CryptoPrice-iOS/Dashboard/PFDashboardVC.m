@@ -7,21 +7,30 @@
 //
 
 #import "PFDashboardVC.h"
+#import "PFDashboardPresenter.h"
 
-@interface PFDashboardVC ()
-
+@interface PFDashboardVC () <PFDashboardVCDelegate>
+{
+    PFDashboardPresenter *dashboardPresenter;
+}
 @end
 
 @implementation PFDashboardVC
 
-- (void)viewDidLoad
+-(void) viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"Hello World");
+    [self initPFDashboardPresenter];
+}
+
+-(void) initPFDashboardPresenter
+{
+    dashboardPresenter = [[PFDashboardPresenter alloc] init];
+    [dashboardPresenter setPfDashboardVCDelegate: self];
 }
 
 
-- (void)didReceiveMemoryWarning
+-(void) didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
