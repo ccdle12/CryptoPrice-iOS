@@ -9,7 +9,7 @@
 #import "PFDashboardVC.h"
 #import "PFDashboardPresenter.h"
 
-@interface PFDashboardVC () <PFDashboardVCDelegate>
+@interface PFDashboardVC() <PFDashboardVCDelegate>
 {
     PFDashboardPresenter *dashboardPresenter;
 }
@@ -17,6 +17,9 @@
 
 @implementation PFDashboardVC
 
+
+
+#pragma mark - Setup and Constructor Methods
 -(void) viewDidLoad
 {
     [super viewDidLoad];
@@ -28,7 +31,6 @@
     dashboardPresenter = [[PFDashboardPresenter alloc] init];
     [dashboardPresenter setPfDashboardVCDelegate: self];
 }
-
 
 -(void) didReceiveMemoryWarning
 {

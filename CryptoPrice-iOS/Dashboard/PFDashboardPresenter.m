@@ -7,7 +7,29 @@
 //
 
 #import "PFDashboardPresenter.h"
+#import "PFDataManager.h"
+
+@interface PFDashboardPresenter() <PFDashboardPresenterDelegate>
+{
+    PFDataManager* pfDataManager;
+}
+@end
 
 @implementation PFDashboardPresenter
+
+#pragma mark - Setup and Constructor Methods
+-(id) init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        pfDataManager = [[PFDataManager alloc] init];
+        [pfDataManager setPfDashboardPresenterDelegate:self];
+    }
+    
+    return self;
+}
+
 
 @end

@@ -10,6 +10,7 @@
 
 @implementation Bitcoin
 
+#pragma mark - Setup and Constructor Methods
 -(id) initWithPrice:(double) price
 {
     self = [super init];
