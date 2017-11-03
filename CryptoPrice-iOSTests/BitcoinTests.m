@@ -18,7 +18,7 @@
 - (void)setUp
 {
     [super setUp];
-    self.bitcoin = [[Bitcoin alloc] initWithPrice: 7000.54];
+    self.bitcoin = [[Bitcoin alloc] init];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -36,8 +36,15 @@
     XCTAssert(self.bitcoin);
 }
 
+-(void) testBitcoinIDIsZero
+{
+    XCTAssertEqual(0, self.bitcoin.id);
+}
+
 - (void)testCanAccessBitcoinPrice
 {
+    self.bitcoin.USDPrice = 7000.54;
+    
     double expectedUSDPrice = 7000.54;
     double resultUSDPrice = self.bitcoin.USDPrice;
     

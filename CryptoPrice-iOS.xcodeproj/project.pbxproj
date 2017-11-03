@@ -16,6 +16,12 @@
 		F27BFFB81FAB6C2A0080BAEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFB71FAB6C2A0080BAEA /* main.m */; };
 		F27BFFC21FAB6C2A0080BAEA /* BitcoinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFC11FAB6C2A0080BAEA /* BitcoinTests.m */; };
 		F27BFFCD1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFCC1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m */; };
+		F2E769B61FAD22140029B207 /* Exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769B51FAD22140029B207 /* Exchange.m */; };
+		F2E769B71FAD22140029B207 /* Exchange.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769B51FAD22140029B207 /* Exchange.m */; };
+		F2E769BA1FAD22CA0029B207 /* Coinbase.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769B91FAD22CA0029B207 /* Coinbase.m */; };
+		F2E769BB1FAD22CA0029B207 /* Coinbase.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769B91FAD22CA0029B207 /* Coinbase.m */; };
+		F2E769BF1FAD26070029B207 /* ExchangesGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769BE1FAD26070029B207 /* ExchangesGraph.m */; };
+		F2E769C01FAD26070029B207 /* ExchangesGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769BE1FAD26070029B207 /* ExchangesGraph.m */; };
 		F2F91EC61FAB8B4F00E71C90 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */; };
 		F2FB99F31FAC841C0027513D /* CryptoCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FB99F21FAC841C0027513D /* CryptoCurrency.m */; };
 		F2FB99F61FAC86BC0027513D /* Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FB99F51FAC86BC0027513D /* Bitcoin.m */; };
@@ -62,6 +68,13 @@
 		F27BFFC31FAB6C2A0080BAEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F27BFFC81FAB6C2A0080BAEA /* CryptoPrice-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoPrice-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27BFFCC1FAB6C2A0080BAEA /* CryptoPrice_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoPrice_iOSUITests.m; sourceTree = "<group>"; };
+		F2E769B41FAD22140029B207 /* Exchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exchange.h; sourceTree = "<group>"; };
+		F2E769B51FAD22140029B207 /* Exchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exchange.m; sourceTree = "<group>"; };
+		F2E769B81FAD22CA0029B207 /* Coinbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coinbase.h; sourceTree = "<group>"; };
+		F2E769B91FAD22CA0029B207 /* Coinbase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coinbase.m; sourceTree = "<group>"; };
+		F2E769BC1FAD251E0029B207 /* CoinPriceUpdate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinPriceUpdate.h; sourceTree = "<group>"; };
+		F2E769BD1FAD26070029B207 /* ExchangesGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangesGraph.h; sourceTree = "<group>"; };
+		F2E769BE1FAD26070029B207 /* ExchangesGraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangesGraph.m; sourceTree = "<group>"; };
 		F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F2FB99F11FAC841C0027513D /* CryptoCurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoCurrency.h; sourceTree = "<group>"; };
 		F2FB99F21FAC841C0027513D /* CryptoCurrency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoCurrency.m; sourceTree = "<group>"; };
@@ -155,6 +168,31 @@
 			path = "CryptoPrice-iOSUITests";
 			sourceTree = "<group>";
 		};
+		F2E769B21FAD21EA0029B207 /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+				F2FB99F11FAC841C0027513D /* CryptoCurrency.h */,
+				F2FB99F21FAC841C0027513D /* CryptoCurrency.m */,
+				F2FB99F41FAC86BC0027513D /* Bitcoin.h */,
+				F2FB99F51FAC86BC0027513D /* Bitcoin.m */,
+			);
+			path = Coins;
+			sourceTree = "<group>";
+		};
+		F2E769B31FAD21F90029B207 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				F2E769B41FAD22140029B207 /* Exchange.h */,
+				F2E769B51FAD22140029B207 /* Exchange.m */,
+				F2E769B81FAD22CA0029B207 /* Coinbase.h */,
+				F2E769B91FAD22CA0029B207 /* Coinbase.m */,
+				F2E769BC1FAD251E0029B207 /* CoinPriceUpdate.h */,
+				F2E769BD1FAD26070029B207 /* ExchangesGraph.h */,
+				F2E769BE1FAD26070029B207 /* ExchangesGraph.m */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
 		F2F91EBE1FAB790800E71C90 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,10 +251,8 @@
 		F2FB99F01FAC83EE0027513D /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
-				F2FB99F11FAC841C0027513D /* CryptoCurrency.h */,
-				F2FB99F21FAC841C0027513D /* CryptoCurrency.m */,
-				F2FB99F41FAC86BC0027513D /* Bitcoin.h */,
-				F2FB99F51FAC86BC0027513D /* Bitcoin.m */,
+				F2E769B31FAD21F90029B207 /* Exchanges */,
+				F2E769B21FAD21EA0029B207 /* Coins */,
 			);
 			path = CustomClasses;
 			sourceTree = "<group>";
@@ -357,10 +393,13 @@
 			files = (
 				F27BFFAA1FAB6C2A0080BAEA /* PFDashboardVC.m in Sources */,
 				F27BFFB01FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld in Sources */,
+				F2E769BF1FAD26070029B207 /* ExchangesGraph.m in Sources */,
 				F2FB99FA1FACAC570027513D /* PFDashboardPresenter.m in Sources */,
+				F2E769BA1FAD22CA0029B207 /* Coinbase.m in Sources */,
 				F27BFFB81FAB6C2A0080BAEA /* main.m in Sources */,
 				F27BFFA71FAB6C2A0080BAEA /* AppDelegate.m in Sources */,
 				F2FB9A001FACB6DE0027513D /* PFDataManager.m in Sources */,
+				F2E769B61FAD22140029B207 /* Exchange.m in Sources */,
 				F2FB99F61FAC86BC0027513D /* Bitcoin.m in Sources */,
 				F2FB99F31FAC841C0027513D /* CryptoCurrency.m in Sources */,
 			);
@@ -371,9 +410,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2FB9A011FACB6DE0027513D /* PFDataManager.m in Sources */,
+				F2E769BB1FAD22CA0029B207 /* Coinbase.m in Sources */,
+				F2E769B71FAD22140029B207 /* Exchange.m in Sources */,
 				F2FB99F71FAC86BC0027513D /* Bitcoin.m in Sources */,
 				F2FB99FD1FACAE0D0027513D /* PFDashboardVCTests.m in Sources */,
 				F2FB9A031FACBD890027513D /* PFDashboardPresenterTests.m in Sources */,
+				F2E769C01FAD26070029B207 /* ExchangesGraph.m in Sources */,
 				F2FB99FB1FACAC570027513D /* PFDashboardPresenter.m in Sources */,
 				F27BFFC21FAB6C2A0080BAEA /* BitcoinTests.m in Sources */,
 			);

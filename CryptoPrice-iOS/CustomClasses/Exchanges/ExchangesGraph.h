@@ -1,5 +1,5 @@
 //
-//  CryptoCurrency.h
+//  ExchangesGraph.h
 //  CryptoPrice-iOS
 //
 //  Created by Christopher Coverdale on 03/11/2017.
@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Exchange.h"
 
-@interface CryptoCurrency : NSObject
-@property double USDPrice;
-@property NSString* ticker;
+@interface ExchangesGraph : NSObject
+
+-(Exchange*) getExchange:(NSString*) exchange;
+
 @end
