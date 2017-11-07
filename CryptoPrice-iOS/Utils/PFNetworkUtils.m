@@ -54,11 +54,26 @@
 {
     NSString* requestURL = [NSString stringWithFormat:@"https://api.coinbase.com/v2/prices/%@-USD/spot/", tickerSymbol];
     NSURL* url = [NSURL URLWithString:requestURL];
-    NSData* data = [NSData dataWithContentsOfURL:url];
+
+    //TODO CARRY ON IMPLEMENTING ASYNCHRONOUS CALLS
+    [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+
+        NSDictionary* unserializedData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        
+        NSDictionary* serializedDataObject = [unserializedData objectForKey:@"data"];
+        NSString* amount = [serializedDataObject objectForKey:@"amount"];
+        
+        NSLog(@"amount: %@",amount);
+    }] resume];
     
-    NSString* encodedResponse = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    
-    return [[PFJsonParserUtils instanceOfPFJsonParserUtils] parseCoinBaseJson: encodedResponse];
+    return 0.1;
+//    return [[PFJsonParserUtils instanceOfPFJsonParserUtils] parseCoinBaseJson: encodedResponse];
 }
+
+//- (NSURLSessionDataTask *)dataTaskWithURL:(NSURL *)url
+//                        completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler;
+//{
+//
+//}
 
 @end
