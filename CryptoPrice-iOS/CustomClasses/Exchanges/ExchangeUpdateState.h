@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol CoinPriceUpdate <NSObject>
--(NSString*) getUpdatedPrice:(int) coinID;
+@protocol ExchangeUpdateState <NSObject>
+-(void) exchangeUpdatePrice:(NSString* )exchange :(int) coinID;
 @end

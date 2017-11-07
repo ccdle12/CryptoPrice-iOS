@@ -7,6 +7,7 @@
 //
 
 #import "Exchange.h"
+#import "PFNetworkUtils.h"
 
 @implementation Exchange
 
@@ -15,13 +16,35 @@
     self = [super init];
     
     if (self)
-        self.coins = [[NSMutableArray alloc] init];
+    {
+        self.coins = [[NSMutableArray alloc] initWithCapacity:3];
+        [self initCoins];
+    }
     
     return self;
 }
-- (NSString *)getUpdatedPrice:(int)coinID
+
+-(void) initCoins
 {
-    return @"-";
+    self.bitcoin = [[Bitcoin alloc] init];
+    self.ethereum = [[Ethereum alloc] init];
+    self.litecoin = [[Litecoin alloc] init];
+    
+    [self.coins addObject:self.bitcoin];
+    [self.coins addObject:self.ethereum];
+    [self.coins addObject:self.litecoin];
+    
+    NSUInteger* sizeOfCoins = [self.coins count];
+    self.coinCount = sizeOfCoins;
+}
+
+- (void) exchangeUpdatePrice:(Exchange*)exchange :(int)coinID
+{
+    CryptoCurrency* coin = [self.coins objectAtIndex:coinID];
+    double USDPrice = [[PFNetworkUtils instanceOfPFNetworkUtils] getUpdatedPrice:exchange.exchangeID :coin.ticker];
+    
+    coin.USDPrice = USDPrice;
+    [self.exchangeDelegate exchangeStateHasChanged:exchange.exchangeName :coinID];
 }
 
 @end

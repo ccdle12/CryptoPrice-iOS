@@ -12,19 +12,19 @@
 @interface ExchangesGraph()
 {
     NSMutableDictionary* exchangesTable;
+   
 }
 @end
 
 @implementation ExchangesGraph
+@synthesize exchangesArrayList;
 
 +(ExchangesGraph*) instanceOfExchangesGraph
 {
     static ExchangesGraph* exchangesGraph = nil;
     
     if (!exchangesGraph)
-    {
         exchangesGraph = [[super allocWithZone:nil] init];
-    }
     
     return exchangesGraph;
 }
@@ -41,6 +41,7 @@
     if (self)
     {
         exchangesTable = [[NSMutableDictionary alloc] init];
+        exchangesArrayList = [[NSMutableArray alloc] init];
         [self initAllExchanges];
     }
     
@@ -51,6 +52,7 @@
 {
     Coinbase* coinbase = [[Coinbase alloc] init];
     [exchangesTable setObject:coinbase forKey:coinbase.exchangeName];
+    [exchangesArrayList addObject:coinbase];
 }
 
 -(Exchange*) getExchange:(NSString*) exchange

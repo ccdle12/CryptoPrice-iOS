@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Exchange.h"
+#import "ExchangeDelegate.h"
+
 @protocol PFDashboardPresenterDelegate <NSObject>
 @end
 
-@interface PFDataManager : NSObject
+@interface PFDataManager : NSObject <ExchangeDelegate>
 
 @property (nonatomic) id<PFDashboardPresenterDelegate> pfDashboardPresenterDelegate;
-
+-(void) updateAllPrices;
 @end
 

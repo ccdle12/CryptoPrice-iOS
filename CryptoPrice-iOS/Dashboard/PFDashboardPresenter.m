@@ -26,6 +26,10 @@
     {
         pfDataManager = [[PFDataManager alloc] init];
         [pfDataManager setPfDashboardPresenterDelegate:self];
+        
+        //TODO: Testing network utils works
+        NSLog(@"Calling update all prices");
+        [pfDataManager updateAllPrices];
     }
     
     return self;

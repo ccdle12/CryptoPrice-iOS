@@ -16,19 +16,13 @@
     
     if (self)
     {
-        [self initSuperClassCoins];
         self.exchangeName = @"Coinbase";
         self.URL = [NSString stringWithFormat:@"https://api.coinbase.com/v2/prices/%@-USD/spot", self.bitcoin.ticker];
         self.header = @"Authorization: Bearer abd90df5f27a7b170cd775abf89d632b350b7c1c9d53e08b340cd9832ce52c2c";
+        self.exchangeID = 0;
     }
     
     return self;
-}
-
--(void) initSuperClassCoins
-{
-    self.bitcoin = [[Bitcoin alloc] init];
-    [self.coins insertObject:self.bitcoin atIndex:self.bitcoin.id];
 }
 
 @end

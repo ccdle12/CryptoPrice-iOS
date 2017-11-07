@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F277DA611FB1FAB100562C9B /* Ethereum.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA601FB1FAB100562C9B /* Ethereum.m */; };
+		F277DA621FB1FAB100562C9B /* Ethereum.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA601FB1FAB100562C9B /* Ethereum.m */; };
+		F277DA651FB1FB0E00562C9B /* Litecoin.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA641FB1FB0E00562C9B /* Litecoin.m */; };
+		F277DA661FB1FB0E00562C9B /* Litecoin.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA641FB1FB0E00562C9B /* Litecoin.m */; };
+		F277DA691FB1FB6900562C9B /* PFJsonParserUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA681FB1FB6900562C9B /* PFJsonParserUtils.m */; };
+		F277DA6A1FB1FB6900562C9B /* PFJsonParserUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA681FB1FB6900562C9B /* PFJsonParserUtils.m */; };
+		F277DA6C1FB1FDFB00562C9B /* ExchangeUpdateState.h in Sources */ = {isa = PBXBuildFile; fileRef = F2E769BC1FAD251E0029B207 /* ExchangeUpdateState.h */; };
+		F277DA711FB220F600562C9B /* PFNetworkUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA701FB220F600562C9B /* PFNetworkUtils.m */; };
+		F277DA721FB220F600562C9B /* PFNetworkUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F277DA701FB220F600562C9B /* PFNetworkUtils.m */; };
 		F27BFFA71FAB6C2A0080BAEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFA61FAB6C2A0080BAEA /* AppDelegate.m */; };
 		F27BFFAA1FAB6C2A0080BAEA /* PFDashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BFFA91FAB6C2A0080BAEA /* PFDashboardVC.m */; };
 		F27BFFAD1FAB6C2A0080BAEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27BFFAB1FAB6C2A0080BAEA /* Main.storyboard */; };
@@ -53,6 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F277DA5F1FB1FAB100562C9B /* Ethereum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ethereum.h; sourceTree = "<group>"; };
+		F277DA601FB1FAB100562C9B /* Ethereum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ethereum.m; sourceTree = "<group>"; };
+		F277DA631FB1FB0E00562C9B /* Litecoin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Litecoin.h; sourceTree = "<group>"; };
+		F277DA641FB1FB0E00562C9B /* Litecoin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Litecoin.m; sourceTree = "<group>"; };
+		F277DA671FB1FB6900562C9B /* PFJsonParserUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFJsonParserUtils.h; sourceTree = "<group>"; };
+		F277DA681FB1FB6900562C9B /* PFJsonParserUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFJsonParserUtils.m; sourceTree = "<group>"; };
+		F277DA6D1FB2084D00562C9B /* ExchangeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeDelegate.h; sourceTree = "<group>"; };
+		F277DA6F1FB220F600562C9B /* PFNetworkUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PFNetworkUtils.h; sourceTree = "<group>"; };
+		F277DA701FB220F600562C9B /* PFNetworkUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFNetworkUtils.m; sourceTree = "<group>"; };
 		F27BFFA21FAB6C2A0080BAEA /* CryptoPrice-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoPrice-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F27BFFA51FAB6C2A0080BAEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F27BFFA61FAB6C2A0080BAEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,7 +91,7 @@
 		F2E769B51FAD22140029B207 /* Exchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exchange.m; sourceTree = "<group>"; };
 		F2E769B81FAD22CA0029B207 /* Coinbase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coinbase.h; sourceTree = "<group>"; };
 		F2E769B91FAD22CA0029B207 /* Coinbase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coinbase.m; sourceTree = "<group>"; };
-		F2E769BC1FAD251E0029B207 /* CoinPriceUpdate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoinPriceUpdate.h; sourceTree = "<group>"; };
+		F2E769BC1FAD251E0029B207 /* ExchangeUpdateState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangeUpdateState.h; sourceTree = "<group>"; };
 		F2E769BD1FAD26070029B207 /* ExchangesGraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExchangesGraph.h; sourceTree = "<group>"; };
 		F2E769BE1FAD26070029B207 /* ExchangesGraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangesGraph.m; sourceTree = "<group>"; };
 		F2E769C71FAD29950029B207 /* ExchangesGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangesGraphTests.m; sourceTree = "<group>"; };
@@ -178,6 +196,10 @@
 				F2FB99F21FAC841C0027513D /* CryptoCurrency.m */,
 				F2FB99F41FAC86BC0027513D /* Bitcoin.h */,
 				F2FB99F51FAC86BC0027513D /* Bitcoin.m */,
+				F277DA5F1FB1FAB100562C9B /* Ethereum.h */,
+				F277DA601FB1FAB100562C9B /* Ethereum.m */,
+				F277DA631FB1FB0E00562C9B /* Litecoin.h */,
+				F277DA641FB1FB0E00562C9B /* Litecoin.m */,
 			);
 			path = Coins;
 			sourceTree = "<group>";
@@ -189,9 +211,10 @@
 				F2E769B51FAD22140029B207 /* Exchange.m */,
 				F2E769B81FAD22CA0029B207 /* Coinbase.h */,
 				F2E769B91FAD22CA0029B207 /* Coinbase.m */,
-				F2E769BC1FAD251E0029B207 /* CoinPriceUpdate.h */,
+				F2E769BC1FAD251E0029B207 /* ExchangeUpdateState.h */,
 				F2E769BD1FAD26070029B207 /* ExchangesGraph.h */,
 				F2E769BE1FAD26070029B207 /* ExchangesGraph.m */,
+				F277DA6D1FB2084D00562C9B /* ExchangeDelegate.h */,
 			);
 			path = Exchanges;
 			sourceTree = "<group>";
@@ -235,6 +258,10 @@
 		F2F91EC21FAB795E00E71C90 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F277DA671FB1FB6900562C9B /* PFJsonParserUtils.h */,
+				F277DA681FB1FB6900562C9B /* PFJsonParserUtils.m */,
+				F277DA6F1FB220F600562C9B /* PFNetworkUtils.h */,
+				F277DA701FB220F600562C9B /* PFNetworkUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -394,14 +421,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F277DA6C1FB1FDFB00562C9B /* ExchangeUpdateState.h in Sources */,
 				F27BFFAA1FAB6C2A0080BAEA /* PFDashboardVC.m in Sources */,
+				F277DA651FB1FB0E00562C9B /* Litecoin.m in Sources */,
 				F27BFFB01FAB6C2A0080BAEA /* CryptoPrice_iOS.xcdatamodeld in Sources */,
 				F2E769BF1FAD26070029B207 /* ExchangesGraph.m in Sources */,
 				F2FB99FA1FACAC570027513D /* PFDashboardPresenter.m in Sources */,
+				F277DA611FB1FAB100562C9B /* Ethereum.m in Sources */,
+				F277DA691FB1FB6900562C9B /* PFJsonParserUtils.m in Sources */,
 				F2E769BA1FAD22CA0029B207 /* Coinbase.m in Sources */,
 				F27BFFB81FAB6C2A0080BAEA /* main.m in Sources */,
 				F27BFFA71FAB6C2A0080BAEA /* AppDelegate.m in Sources */,
 				F2FB9A001FACB6DE0027513D /* PFDataManager.m in Sources */,
+				F277DA711FB220F600562C9B /* PFNetworkUtils.m in Sources */,
 				F2E769B61FAD22140029B207 /* Exchange.m in Sources */,
 				F2FB99F61FAC86BC0027513D /* Bitcoin.m in Sources */,
 				F2FB99F31FAC841C0027513D /* CryptoCurrency.m in Sources */,
@@ -412,13 +444,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F277DA721FB220F600562C9B /* PFNetworkUtils.m in Sources */,
 				F2FB9A011FACB6DE0027513D /* PFDataManager.m in Sources */,
 				F2E769BB1FAD22CA0029B207 /* Coinbase.m in Sources */,
 				F2E769B71FAD22140029B207 /* Exchange.m in Sources */,
+				F277DA6A1FB1FB6900562C9B /* PFJsonParserUtils.m in Sources */,
 				F2FB99F71FAC86BC0027513D /* Bitcoin.m in Sources */,
 				F2FB99FD1FACAE0D0027513D /* PFDashboardVCTests.m in Sources */,
 				F2FB9A031FACBD890027513D /* PFDashboardPresenterTests.m in Sources */,
+				F277DA661FB1FB0E00562C9B /* Litecoin.m in Sources */,
 				F2E769C01FAD26070029B207 /* ExchangesGraph.m in Sources */,
+				F277DA621FB1FAB100562C9B /* Ethereum.m in Sources */,
 				F2FB99FB1FACAC570027513D /* PFDashboardPresenter.m in Sources */,
 				F27BFFC21FAB6C2A0080BAEA /* BitcoinTests.m in Sources */,
 				F2E769C81FAD29950029B207 /* ExchangesGraphTests.m in Sources */,
