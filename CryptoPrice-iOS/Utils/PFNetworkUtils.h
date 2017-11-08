@@ -10,5 +10,5 @@
 
 @interface PFNetworkUtils : NSObject
 +(PFNetworkUtils *) instanceOfPFNetworkUtils;
--(double) getUpdatedPrice:(int) exchangeID :(NSString*)tickerSymbol;
+-(NSURL*) getUpdatedPrice:(int) exchangeID :(NSString*)tickerSymbol;
 @end

@@ -41,10 +41,21 @@
 - (void) exchangeUpdatePrice:(Exchange*)exchange :(int)coinID
 {
     CryptoCurrency* coin = [self.coins objectAtIndex:coinID];
-    double USDPrice = [[PFNetworkUtils instanceOfPFNetworkUtils] getUpdatedPrice:exchange.exchangeID :coin.ticker];
+    NSURL* url = [[PFNetworkUtils instanceOfPFNetworkUtils] getUpdatedPrice:exchange.exchangeID :coin.ticker];
     
-    coin.USDPrice = USDPrice;
-    [self.exchangeDelegate exchangeStateHasChanged:exchange.exchangeName :coinID];
+    /** Async Call for http request - Not ideal place to call it**/
+    [[[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        
+        NSDictionary* unserializedData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+        
+        NSDictionary* serializedDataObject = [unserializedData objectForKey:@"data"];
+        NSString* amount = [serializedDataObject objectForKey:@"amount"];
+        
+        double USDPrice = [amount doubleValue];
+        coin.USDPrice = USDPrice;
+        
+        [self.exchangeDelegate exchangeStateHasChanged:exchange.exchangeName :coinID];
+    }] resume];
 }
 
 @end

@@ -56,6 +56,7 @@
     Exchange* requestedExchange = [exchangesGraph getExchange:exchange];
     
     CryptoCurrency* updatedCoin = [requestedExchange.coins objectAtIndex:coinID];
+    NSLog(@"Exchange: %@", exchange);
     NSLog(@"Coin that was updated: %@", updatedCoin.ticker);
     NSLog(@"Call back coin price: %f", updatedCoin.USDPrice);
 
