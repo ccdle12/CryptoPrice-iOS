@@ -29,7 +29,7 @@
         
         //TODO: Testing network utils works
         NSLog(@"Calling update all prices");
-        [pfDataManager updateAllPrices];
+        [pfDataManager updateAllExchangePrices];
     }
     
     return self;

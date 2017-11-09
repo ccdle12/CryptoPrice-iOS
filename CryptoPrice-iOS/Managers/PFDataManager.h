@@ -16,6 +16,7 @@
 @interface PFDataManager : NSObject <ExchangeDelegate>
 
 @property (nonatomic) id<PFDashboardPresenterDelegate> pfDashboardPresenterDelegate;
--(void) updateAllPrices;
+-(void) updatePricesOnExchange:(NSString*) exchange;
+-(void) updateAllExchangePrices;
 @end
 

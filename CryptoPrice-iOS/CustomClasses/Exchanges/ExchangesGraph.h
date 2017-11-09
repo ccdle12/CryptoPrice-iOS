@@ -14,5 +14,5 @@
  @property NSMutableArray* exchangesArrayList;
 +(ExchangesGraph*) instanceOfExchangesGraph;
 -(Exchange*) getExchange:(NSString*) exchange;
-
+-(BOOL) containsExchange:(NSString*) exchange;
 @end

@@ -33,7 +33,18 @@
 
 
 #pragma marks - Calls to update prices **/
--(void) updateAllPrices
+-(void) updatePricesOnExchange:(NSString*) exchange
+{
+    if (![exchangesGraph containsExchange:exchange])
+        return;
+    
+    Exchange* requestedExchange = [exchangesGraph getExchange:exchange];
+    
+    for (int i = 0; i < requestedExchange.coinCount; i++)
+        [self getUpdatedPrice:requestedExchange :i];
+}
+
+-(void) updateAllExchangePrices
 {
     NSMutableArray* exchangesArrayList = exchangesGraph.exchangesArrayList;
 

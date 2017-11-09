@@ -38,6 +38,15 @@
     XCTAssertTrue([self.exchangesGraph getExchange:@"Coinbase"]);
 }
 
+-(void) testCheckingIfExchangesGraphContainsCoinbase
+{
+    XCTAssertTrue([self.exchangesGraph containsExchange:@"Coinbase"]);
+}
+
+-(void) testCheckingIfExchangeGraphContainsFakeExchang
+{
+    XCTAssertFalse([self.exchangesGraph containsExchange:@"blaaah"]);
+}
 - (void)testPerformanceExample
 {
     // This is an example of a performance test case.

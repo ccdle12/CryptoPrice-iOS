@@ -60,4 +60,9 @@
     return [exchangesTable objectForKey:exchange];
 }
 
+-(BOOL) containsExchange:(NSString*) exchange
+{
+    return [exchangesTable objectForKey:exchange];
+}
+
 @end

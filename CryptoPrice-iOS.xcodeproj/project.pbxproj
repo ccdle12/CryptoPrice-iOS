@@ -33,6 +33,7 @@
 		F2E769C01FAD26070029B207 /* ExchangesGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769BE1FAD26070029B207 /* ExchangesGraph.m */; };
 		F2E769C81FAD29950029B207 /* ExchangesGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E769C71FAD29950029B207 /* ExchangesGraphTests.m */; };
 		F2F2E7611FB4910C0096B9A6 /* ExchangesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E7601FB4910C0096B9A6 /* ExchangesTest.m */; };
+		F2F2E7631FB49B810096B9A6 /* PFDataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F2E7621FB49B810096B9A6 /* PFDataManagerTests.m */; };
 		F2F91EC61FAB8B4F00E71C90 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */; };
 		F2FB99F31FAC841C0027513D /* CryptoCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FB99F21FAC841C0027513D /* CryptoCurrency.m */; };
 		F2FB99F61FAC86BC0027513D /* Bitcoin.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FB99F51FAC86BC0027513D /* Bitcoin.m */; };
@@ -97,6 +98,7 @@
 		F2E769BE1FAD26070029B207 /* ExchangesGraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangesGraph.m; sourceTree = "<group>"; };
 		F2E769C71FAD29950029B207 /* ExchangesGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangesGraphTests.m; sourceTree = "<group>"; };
 		F2F2E7601FB4910C0096B9A6 /* ExchangesTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExchangesTest.m; sourceTree = "<group>"; };
+		F2F2E7621FB49B810096B9A6 /* PFDataManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PFDataManagerTests.m; sourceTree = "<group>"; };
 		F2F91EC51FAB8B4F00E71C90 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F2FB99F11FAC841C0027513D /* CryptoCurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptoCurrency.h; sourceTree = "<group>"; };
 		F2FB99F21FAC841C0027513D /* CryptoCurrency.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoCurrency.m; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		F27BFFC01FAB6C2A0080BAEA /* CryptoPrice-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				F2F2E7621FB49B810096B9A6 /* PFDataManagerTests.m */,
 				F27BFFC11FAB6C2A0080BAEA /* BitcoinTests.m */,
 				F27BFFC31FAB6C2A0080BAEA /* Info.plist */,
 				F2FB99FC1FACAE0D0027513D /* PFDashboardVCTests.m */,
@@ -460,6 +463,7 @@
 				F2E769C01FAD26070029B207 /* ExchangesGraph.m in Sources */,
 				F277DA621FB1FAB100562C9B /* Ethereum.m in Sources */,
 				F2FB99FB1FACAC570027513D /* PFDashboardPresenter.m in Sources */,
+				F2F2E7631FB49B810096B9A6 /* PFDataManagerTests.m in Sources */,
 				F27BFFC21FAB6C2A0080BAEA /* BitcoinTests.m in Sources */,
 				F2E769C81FAD29950029B207 /* ExchangesGraphTests.m in Sources */,
 			);
